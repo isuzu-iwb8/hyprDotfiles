@@ -5,6 +5,7 @@ A configuration for Arch Linux and Hyprland for enhanced workflow experience.
 ```
 git clone https://github.com/isuzu-iwb8/hyprDotfiles.git
 cd hyprDotfiles
+sudo chmod +x ./setup.sh
 bash setup.sh
 ```
 
