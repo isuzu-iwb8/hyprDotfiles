@@ -1,0 +1,175 @@
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: Hack Nerd Font;
+  font-size: 13px;
+  font-weight: bold;    
+
+}
+
+window#waybar {
+  background-color: #1d1c1a;
+  transition-property: transparent;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.5;
+}
+
+#workspaces {
+  background-color: transparent;
+}
+
+#workspaces button {
+  all: initial;
+  /* Remove GTK theme values (waybar #1351) */
+  min-width: 0;
+  /* Fix weird spacing in materia (waybar #450) */
+  box-shadow: inset 0 -3px transparent;
+  /* Use box-shadow instead of border so the text isn't offset */
+  padding: 2px 12px;
+  margin: 4px 3px;
+  border-radius: 4px;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+}
+
+#workspaces button.active {
+  color: #1e1e2e;
+  background-color: #9f9f9f;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  color: #1e1e2e;
+  background-color: #cdd6f4;
+}
+
+#workspaces button.urgent {
+  background-color: #313131;
+}
+
+#window {
+  color: #fff;
+  padding-left: 4px;
+}
+
+#cpu,
+#memory,
+#custom-kernel,
+#custom-power,
+#custom-diskfree,
+#battery,
+#backlight,
+#wireplumber,
+#pulseaudio,
+#network,
+#clock,
+#temperature,
+#custom-notification,
+#tray {
+  border-radius: 4px;
+  margin: 4px 3px;
+  padding: 2px 12px;
+  background-color: #000000;
+  color: #000000;
+}
+#custom-kernel {
+  background-color: #c9c9c9;
+}
+
+#custom-power {
+  background-color: #a6a6a6;
+}
+
+#custom-diskfree {
+  background-color: #c9c9c9;
+}
+
+#custom-logo {
+  padding-right: 7px;
+  padding-left: 7px;
+  margin-left: 5px;
+  font-size: 15px;
+  border-radius: 8px 0px 0px 8px;
+  color: #c9c9c9;
+}
+
+#custom-notification {
+  font-family: "NotoSansMono Nerd Font";
+}
+
+#cpu {
+  background-color: #c9c9c9;
+}
+
+
+#memory {
+  background-color: #c9c9c9;
+}
+
+#battery {
+  margin-right: 20px;
+  background-color: #98be65;
+}
+
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+  background-color: #98be65;
+  /* color: #f1fa8c; */
+}
+
+#battery.charging {
+  margin-right: 20px;
+  background-color: #98be65;
+  color: #181825;
+}
+
+#backlight {
+    background-color: #c9c9c9;
+}
+
+#wireplumber {
+  background-color: #c9c9c9;
+}
+
+#pulseaudio {
+  background-color: #c9c9c9;
+}
+
+#pulseaudio.muted {
+  background-color: #c9c9c9;
+  color: #ba5353;
+}
+
+#network {
+  background-color: #c9c9c9;
+  /* padding-right: 17px; */
+}
+
+#clock {
+  background-color: #c9c9c9;
+}
+
+#temperature {
+  background-color: #c9c9c9;
+}
+
+#custom-notification {
+  background-color: #c9c9c9;
+}
+
+tooltip {
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #1d1c1a;
+}
+
+tooltip label {
+  padding: 5px;
+  background-color: #1d1c1a;
+}
