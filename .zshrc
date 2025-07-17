@@ -14,7 +14,6 @@ export NVM_DIR="$HOME/.nvm"
 globalias() {
 	if [[ $LBUFFER =~ '[a-zA-Z0-9]+$' ]]; then
 		zle _expand_alias
-		zle _expand-word
 	fi
 	zle self-insert
 }
