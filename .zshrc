@@ -5,6 +5,13 @@ plugin=(
 	git
 	zsh-syntax-highlighting
 	zsh-autosuggestions
+        ubuntu
+        dnf
+        brew
+        macports
+        themes
+        rust
+        archlinux
 )
 source $ZSH/oh-my-zsh.sh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#663399,standout"
