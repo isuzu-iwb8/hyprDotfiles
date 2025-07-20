@@ -1,7 +1,7 @@
 sudo pacman -Sy --noconfirm
 
 sudo pacman -S --noconfirm \
-	sddm kitty zsh ttf-hack-nerd ttf-jetbrains-mono-nerd rofi swaybg waybar \
+	sddm fastfetch kitty zsh ttf-hack-nerd ttf-jetbrains-mono-nerd rofi swaybg waybar \
 	+ grim slurp nwg-dock-hyprland swaync plymouth \
 	networkmanager bluez bluez-utils blueman \
 	brightnessctl pipewire wireplumber pavucontrol pamixer \
