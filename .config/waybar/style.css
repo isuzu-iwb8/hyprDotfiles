@@ -162,6 +162,9 @@ window#waybar.hidden {
 #custom-notification {
   background-color: #c9c9c9;
 }
+#custom-waybar-media {
+  padding: 5px;
+}
 
 tooltip {
   border-radius: 8px;
