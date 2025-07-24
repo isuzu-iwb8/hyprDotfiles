@@ -19,6 +19,7 @@
        // "tray",
 	//"custom/kernel",
        // "temperature",
+        "custom/waybar-media",
 	    "cpu",
         "memory",
 	   // "custom/diskfree",
@@ -241,5 +242,16 @@
 	"on-click": "swaync-client -t -sw",
 	"on-click-right": "swaync-client -d -sw",
 	"escape": true
-    }
+    }'
+"custom/waybar-media": {
+    "format": "ᗜ˰ᗜ : {text}"
+    "return-type": "json",
+    "exec": "waybar-media.py status",
+    "on-click": "waybar-media.py playpause",
+    "on-scroll-up": "waybar-media.py previous",
+    "on-scroll-down": "waybar-media.py next",
+    "escape": true,
+    "tooltip": true,
+    "tooltip-format": "Recent Playing"
+},
 }
